@@ -21,7 +21,7 @@ def bayesian_lr_example():
     a = stats.norm(0, 0.0001)
     b = stats.norm(0, 0.0001)
     z_hat = [a.rvs() + b.rvs() * x[i] for i in range(10)]
-    # Fitting through the logit function to generate probability [0,1]
+    # Fitting through the logit function to gene`rate probability [0,1]
     p_hat = [1 / (1 + exp(-z_hat[i])) for i in range(10)]
     # Selecting the labels over a bernoulli distribution
     y_hat = [stats.bernoulli.rvs(p_hat[i]) for i in range(10)]

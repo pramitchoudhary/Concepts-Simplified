@@ -1,3 +1,5 @@
+# Reference: http://sabermetricinsights.blogspot.com/2014/05/bayesian-linear-regression-with-pymc.html
+
 import pymc
 import numpy as np
 import pandas as pd
